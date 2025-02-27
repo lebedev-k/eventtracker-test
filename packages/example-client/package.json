@@ -1,0 +1,10 @@
+{
+  "name": "@eventtracker-test/example-client",
+  "packageManager": "yarn@4.5.0",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "start": "http-server --port ${EXAMPLE_CLIENT_PORT} ./assets"
+  }
+}

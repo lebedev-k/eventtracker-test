@@ -1,0 +1,7 @@
+{
+  "name": "@eventtracker-test/database",
+  "packageManager": "yarn@4.5.0",
+  "scripts": {
+    "start": "docker-compose up"
+  }
+}

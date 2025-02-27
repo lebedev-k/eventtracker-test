@@ -1,0 +1,26 @@
+{
+  "name": "@eventtracker-test/root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:eventtracker-test/57298242-Lebedev-Kirill.git",
+  "author": "Kirill Lebedev <k.lebedev@protonmail.com>",
+  "license": "MIT",
+  "packageManager": "yarn@4.5.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "workspaces": [
+    "./packages/*"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.8.1"
+  },
+  "scripts": {
+    "build": "yarn workspace @eventtracker-test/server build",
+    "start": "yarn workspace @eventtracker-test/database start & yarn workspace @eventtracker-test/server start & yarn workspace @eventtracker-test/example-client start",
+    "start:no-db": "yarn workspace @eventtracker-test/server start & yarn workspace @eventtracker-test/example-client start"
+  }
+}

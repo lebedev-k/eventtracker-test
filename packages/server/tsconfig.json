@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["src/**/*.ts"],
+  "assets": "static",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "NodeNext"
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
